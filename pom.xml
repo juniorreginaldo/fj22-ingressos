@@ -150,4 +150,10 @@
         </plugins>
     </build>
 
+<developers>
+	<develover>
+		<name>Reginaldo Júnior</name>
+		<email>reginaldojunior01@msn.com</email>
+	</developer>	
+</developers>
 </project>
