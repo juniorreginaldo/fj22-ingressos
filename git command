@@ -1,0 +1,12 @@
+git init  -> inicia um repositório local do git
+git status -> mostra o estado atual do repositório
+git add <nome do arquivo>  -> adiciona arquivo na Staging Area
+git config --global user.name "Seu Nome" -> adiciona seu nome no seu repositório local para os commits
+git config --global user.email "Seu Email" -> o mesmo que o de cima mas para email
+git commit -m "alguma mensagem" -> commita mudanças que estão no Staging Area no Git Directory
+git log -> mostra os commits
+git log --oneline -> mostra os commits de maneira resumida
+git reset <hash do commit> -> volta as modificações para o Working Directory até o hash do commit indicado
+git reset <hash do commit> --hard -> remove todos os commits até o commit indicado
+git checkout <arquivo> -> remove alterações do arquivo indicado desde que esteja no Working DIrectory
+git reset <arquivo> -> volta alterações do arquivo indicado da Staging Area para o Working Directory
