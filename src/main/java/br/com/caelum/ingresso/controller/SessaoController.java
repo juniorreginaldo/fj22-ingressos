@@ -1,7 +1,5 @@
 package br.com.caelum.ingresso.controller;
 
-import java.math.BigDecimal;
-
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
