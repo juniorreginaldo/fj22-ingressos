@@ -1,5 +1,7 @@
 package br.com.caelum.ingresso.controller;
 
+import java.math.BigDecimal;
+
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,6 +51,9 @@ public class SessaoController {
 	  
 	  Sessao sessao = form.toSessao(salaDao, filmeDao);
 	  
+	  //List<Sessao> sessoesDaSala = sessaoDao.buscaSessoesDaSala(sessao.getSala());
+
+	  	  
 	  sessaoDao.save(sessao);
 	  
 	  return new ModelAndView("redirect:/admin/sala/" + form.getSalaId() + "/sessoes");

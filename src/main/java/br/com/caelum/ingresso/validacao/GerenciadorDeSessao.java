@@ -5,8 +5,6 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
-import javax.swing.text.StyledEditorKit.BoldAction;
-
 import br.com.caelum.ingresso.model.Sessao;
 
 public class GerenciadorDeSessao {
