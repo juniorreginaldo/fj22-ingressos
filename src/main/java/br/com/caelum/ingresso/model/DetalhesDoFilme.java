@@ -14,7 +14,7 @@ public class DetalhesDoFilme {
 	private String imagem;
 	
 	@JsonProperty("Director")
-	private String diretor;
+	private String diretores;
 	
 	
 	@JsonProperty("Writer")
@@ -24,7 +24,7 @@ public class DetalhesDoFilme {
 	private String atores;
 	
 	@JsonProperty("Plot")
-	private String descrição;	
+	private String descricao;	
 	
 	public String getTitulo() {
 		return titulo;
@@ -50,12 +50,14 @@ public class DetalhesDoFilme {
 		this.imagem = imagem;
 	}
 
-	public String getDiretor() {
-		return diretor;
+		
+
+	public String getDiretores() {
+		return diretores;
 	}
 
-	public void setDiretor(String diretor) {
-		this.diretor = diretor;
+	public void setDiretores(String diretores) {
+		this.diretores = diretores;
 	}
 
 	public String getEscritores() {
@@ -74,12 +76,14 @@ public class DetalhesDoFilme {
 		this.atores = atores;
 	}
 
-	public String getDescrição() {
-		return descrição;
+
+
+	public String getDescricao() {
+		return descricao;
 	}
 
-	public void setDescrição(String descrição) {
-		this.descrição = descrição;
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	}
 
 	public String getAvaliacao() {
