@@ -9,40 +9,9 @@ public class SemDesconto implements Desconto {
 		return "Normal";
 	}
 	
-	public class DescontoParaEstudantes implements Desconto{
-		@Override
-		public String getDescricao() {
-			return "Desconto Estudante";
-		}
-
-
-		
-		public class DescontoParaBancos implements Desconto{
-			@Override
-			public String getDescricao() {
-				return "Desconto Banco";
-			}
-
-			@Override
-			public BigDecimal aplicarDescontoSobre(BigDecimal precoOriginal) {
-				// TODO Auto-generated method stub
-				return null;
-			}
-		}
-
-
-
-		@Override
-		public BigDecimal aplicarDescontoSobre(BigDecimal precoOriginal) {
-			// TODO Auto-generated method stub
-			return null;
-		}	
-	}
-
 	@Override
 	public BigDecimal aplicarDescontoSobre(BigDecimal precoOriginal) {
-		// TODO Auto-generated method stub
-		return null;
+		return precoOriginal;
 	}
 
 }
