@@ -14,11 +14,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-
-
 import br.com.caelum.ingresso.dao.FilmeDao;
 import br.com.caelum.ingresso.dao.SalaDao;
 import br.com.caelum.ingresso.dao.SessaoDao;
+import br.com.caelum.ingresso.model.Carrinho;
 import br.com.caelum.ingresso.model.ImagemCapa;
 import br.com.caelum.ingresso.model.Sessao;
 import br.com.caelum.ingresso.model.TipoDeIngresso;
@@ -37,6 +36,8 @@ public class SessaoController {
 	  private SessaoDao sessaoDao;
 	  @Autowired
 	  private OmdbClient client;
+	  @Autowired
+	  private Carrinho carrinho;
 
   @GetMapping("/admin/sessao")
   
@@ -77,8 +78,10 @@ public class SessaoController {
 	  modelAndView.addObject("sessao", sessao);
 	  modelAndView.addObject(imagemCapa.orElse(new ImagemCapa()));
 	  modelAndView.addObject("tiposDeIngressos",TipoDeIngresso.values());
+	  modelAndView.addObject("carrinho", carrinho);
 	  
 	  return modelAndView;
   }
+  
   
 }
